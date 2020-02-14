@@ -1,5 +1,6 @@
 body {
   background-color: gainsboro;
+  text-align: center;
 }
 h1, h2, ul, p, footer, address {
   font-family: Arial, Helvetica, sans-serif;
@@ -10,3 +11,13 @@ li {
 ul, p, address {
   font-size: 20px;
 }
+
+li {
+  list-style: none;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
