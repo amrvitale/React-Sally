@@ -1,0 +1,78 @@
+
+<!--Make app component that renders full resume.
+Semantic html, header, main, section, address,
+contact info section with name, email, address, phone #, pic
+education section
+employment history section with at least 2 entries, company names, job titles, dates and short description
+Stretch mobile first css
+stretch - prop to control student's name that's being rendered-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sally Student's Fantastic HTML Resume</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+    function App() {
+
+      return (
+      <div>
+        <main>
+            <header>
+            <h1>Sally Student</h1>
+            <img src="Sally.jpg" alt="Hi, I'm Sally from Peanuts. This is my resume."/>
+            </header>
+            <main/>
+            <section class="education">
+              <h2>Education</h2>
+              <ul>
+                <li>University of Peanuts</li>
+              </ul>
+            </section>
+
+            <section class="experience">
+              <h2>Experience </h2>
+              <ul>
+                <li>Front End Web Developer at Netflix..........(11/2015 - 09/2018)</li>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec lorem magna. Aliquam scelerisque condimentum euismod. Curabitur sit amet nunc tellus. Proin justo erat, sollicitudin nec erat vitae, pellentesque maximus elit. Suspendisse egestas volutpat purus, viverra maximus ante consequat et. Sed congue eget est eu vulputate.</p>
+
+                <li>Front End Developer at Pinterest..........(09/2018 - Present)</li>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec lorem magna. Aliquam scelerisque condimentum euismod. Curabitur sit amet nunc tellus. Proin justo erat, sollicitudin nec erat vitae, pellentesque maximus elit. Suspendisse egestas volutpat purus, viverra maximus ante consequat et. Sed congue eget est eu vulputate.</p>
+              </ul>
+            </section>
+
+            <section class="contact">
+              <h2>Contact Me</h2>
+              <p>Interested in working together? Let's chat!</p>
+              <address>
+                <a href="mailto:amrvitale@gmail.com?Subject=Your%20Resume">Email</a>
+                <a href="tel:+13335555555">Phone</a>
+              </address>
+            </section>
+        </main>
+        <footer>© 2019 Sally A. Student</footer>
+    </div>
+  };
+
+      ReactDOM.render(
+      <App />,
+      document.querySelector('#application-root'
+      );
+</script>
+
+  </body>
+</html>
